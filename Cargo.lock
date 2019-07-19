@@ -1,0 +1,40 @@
+[[package]]
+name = "gcc"
+version = "0.3.55"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rust_sample_cxx"
+version = "0.1.0"
+dependencies = [
+ "rustcxx_codegen 0.1.0 (git+https://github.com/google/rustcxx?branch=unstable)",
+ "rustcxx_plugin 0.1.0 (git+https://github.com/google/rustcxx?branch=unstable)",
+]
+
+[[package]]
+name = "rustcxx_codegen"
+version = "0.1.0"
+source = "git+https://github.com/google/rustcxx?branch=unstable#d55c6f948734a9249a4a59768661c3322a84efdc"
+dependencies = [
+ "gcc 0.3.55 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustcxx_common 0.1.0 (git+https://github.com/google/rustcxx?branch=unstable)",
+]
+
+[[package]]
+name = "rustcxx_common"
+version = "0.1.0"
+source = "git+https://github.com/google/rustcxx?branch=unstable#d55c6f948734a9249a4a59768661c3322a84efdc"
+
+[[package]]
+name = "rustcxx_plugin"
+version = "0.1.0"
+source = "git+https://github.com/google/rustcxx?branch=unstable#d55c6f948734a9249a4a59768661c3322a84efdc"
+dependencies = [
+ "rustcxx_common 0.1.0 (git+https://github.com/google/rustcxx?branch=unstable)",
+]
+
+[metadata]
+"checksum gcc 0.3.55 (registry+https://github.com/rust-lang/crates.io-index)" = "8f5f3913fa0bfe7ee1fd8248b6b9f42a5af4b9d65ec2dd2c3c26132b950ecfc2"
+"checksum rustcxx_codegen 0.1.0 (git+https://github.com/google/rustcxx?branch=unstable)" = "<none>"
+"checksum rustcxx_common 0.1.0 (git+https://github.com/google/rustcxx?branch=unstable)" = "<none>"
+"checksum rustcxx_plugin 0.1.0 (git+https://github.com/google/rustcxx?branch=unstable)" = "<none>"

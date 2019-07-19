@@ -1,0 +1,15 @@
+[package]
+name = "rust_sample_cxx"
+version = "0.1.0"
+authors = ["Hatter Jiang <jht5945@gmail.com>"]
+#edition = "2018"
+build = "build.rs"
+
+
+[dependencies.rustcxx_plugin]
+git = "https://github.com/google/rustcxx"
+branch = "unstable"
+
+[build-dependencies.rustcxx_codegen]
+git = "https://github.com/google/rustcxx"
+branch = "unstable"
